@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto';
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.jcc {
+    justify-content: center;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.jcsa {
+    justify-content: space-around;
+}
+.jcfs {
+    justify-content: flex-start;
+}
+.jcfe {
+    justify-content: flex-end;
+}
+.aic {
+    align-items: center;
+}
+.aifs {
+    align-items: flex-start;
+}
+.aife {
+    align-items: flex-end;
+}
+.hidden {
+    display: none;
+}
+ul, li {
+  list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+.numbers-generator {
+    height: 100vh;
+    background-color: #569029;
+}
+
+.container {
+    width: 400px;
+    min-height: 700px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 0 0 35px 2px rgb(45, 29, 70);
+}
+
+
+#random {
+    font-size: 30px;
+}
+
+.number {
+    font-size: 80px;
+    margin: 50px 0;
+}
+
+.parameters {
+    width: 300px;
+}
+
+
+.parameter {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.radio__input {
+  position: absolute;
+  opacity: 0;
+}
+.radio__label {
+  font-size: 16px;
+  padding-left: 30px;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.radio__label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  z-index: 5;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(195, 190, 190);
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color .2s, border .2s;
+}
+
+.radio__label:after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  z-index: 10;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.radio__input:checked + .radio__label:before {
+  border: 1px solid #000;
+}
+
+.radio__input:checked + .radio__label:after {
+  background-color: #000;
+  opacity: 1;
+}
+
+.range {
+    margin: 20px 0;
+}
+
+.min-number, .max-number {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #b3b3b3;
+    font-size: 16px;
+    padding-left: 10px;
+    outline: transparent;
+    margin: 0 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.list-numbers {
+    width: 300px;
+    height: 100px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+
+.btn {
+    user-select: none;
+    min-width: 300px;
+    min-height: 50px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;    
+    cursor: pointer;  
+}

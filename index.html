@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div class="numbers-generator row jcc aic">
+        <div class="container column jcc aic">
+            <div id="random">Случайное число</div>
+            <div class="number js-number">10</div>
+             <div class="parameters column jcfs aic js-parameters">
+                <div class="radio">
+                    <div class="parameter">
+                        <input type="radio" id="range-input" class="radio__input js-range-input" name="parameter" checked="checked">
+                        <label for="range-input" class="radio__label">Из диапазона чисел</label>
+                    </div>
+                    <div class="range">
+                        <span>от</span>
+                        <input type="number" min="1" max="30" step="1" class="min-number js-min-number" value="1">
+                        <span>до</span>
+                        <input type="number" min="1" max="30" step="1" class="max-number js-max-number" value="12">
+                    </div>
+                    <div class="parameter">
+                        <input type="radio" id="list-input" class="radio__input js-list-input" name="parameter" >
+                        <label for="list-input" class="radio__label">Из списка</label>
+                    </div>
+                    <input class="list-numbers js-list-numbers">
+                </div> 
+
+            </div>
+            <button class="btn js-btn">Сгенерировать</button>
+        </div>
+       
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
